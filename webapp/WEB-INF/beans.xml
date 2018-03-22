@@ -19,5 +19,8 @@ http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd">
     <jaxrs:serviceBeans>
       <ref bean="categoryService" />
     </jaxrs:serviceBeans>
+    <jaxrs:providers>
+      <bean class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider" />
+    </jaxrs:providers>
   </jaxrs:server>
 </beans>

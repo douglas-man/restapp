@@ -16,6 +16,7 @@
 		<!-- Version of CXF. Change this to latets version for building against latest CXF distribution -->
 		<spring.version>4.0.0.RELEASE</spring.version>
 		<cxf.version>3.2.2</cxf.version>
+		<jackson.version>2.0.1</jackson.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<build>
@@ -94,6 +95,11 @@
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-rt-rs-client</artifactId>
 			<version>${cxf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
+			<version>${jackson.version}</version>
 		</dependency>
 		<!--dependency><groupId>org.apache.httpcomponents</groupId><artifactId>httpclient</artifactId><version>4.5.3</version></dependency-->
 	</dependencies>
